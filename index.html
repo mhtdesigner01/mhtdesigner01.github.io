@@ -1,83 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <img src="MHT%20Designer%20Logo.png" alt="MHT Designer Logo" style="width:300px; margin-bottom:10px;">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #00ffd5;
-            color: #111;
-            padding: 30px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 50px;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 20px;
-        }
-        section {
-            padding: 50px 20px;
-        }
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .portfolio img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .order-button {
-            background: #00ffd5;
-            color: #111;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 30px;
-        }
-        footer {
-            background: #222;
-            color: #aaa;
-            padding: 20px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>MHT Designer</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:60px;
+background:linear-gradient(45deg,#00ffd5,#0077ff);
+}
+
+header img{
+width:120px;
+margin-bottom:10px;
+filter: drop-shadow(0 0 15px #00ffd5);
+transition:0.5s;
+}
+
+header img:hover{
+transform:scale(1.1) rotate(5deg);
+}
+
+header h1{
+font-size:50px;
+margin:10px 0;
+}
+
+header p{
+font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#00ffd5;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTIONS */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+width:250px;
+height:200px;
+background:#1a1a1a;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:0.4s;
+transform-style:preserve-3d;
+cursor:pointer;
+font-size:20px;
+}
+
+.card:hover{
+transform:rotateY(15deg) rotateX(10deg) scale(1.05);
+background:#00ffd5;
+color:black;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>MHT Designer</h1>
-    <p>Professional Logo Design & Branding Services</p>
+
+<img src="logo.png" alt="MHT Logo">
+
+<h1>MHT Designer</h1>
+<p>Creative Logo & Branding Expert</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
 </header>
 
-<section>
-    <h2>My Portfolio</h2>
-    <div class="portfolio">
-        <img src="https://via.placeholder.com/300x200.png?text=Logo+1" alt="Logo 1">
-        <img src="https://via.placeholder.com/300x200.png?text=Logo+2" alt="Logo 2">
-        <img src="https://via.placeholder.com/300x200.png?text=Logo+3" alt="Logo 3">
-        <img src="https://via.placeholder.com/300x200.png?text=Logo+4" alt="Logo 4">
-    </div>
+<section id="services">
+<h2>My Services</h2>
 
-    <a href="https://wa.me/923316525133" class="order-button">Order Logo on WhatsApp</a>
+<div class="cards">
+<div class="card">Logo Design</div>
+<div class="card">Brand Identity</div>
+<div class="card">3D Sign Board</div>
+<div class="card">Poster Design</div>
+</div>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a professional graphic designer specializing in unique logo designs, branding, and creative solutions for businesses.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Click below to order directly on WhatsApp</p>
+
+<a href="https://wa.me/923316525133" class="btn">Order on WhatsApp</a>
+
 </section>
 
 <footer>
-    &copy; 2026 MHT Designer. All Rights Reserved.
+© 2026 MHT Designer | All Rights Reserved
 </footer>
 
 </body>
-  </html>
+</html>
