@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MHT Designer | All-in-One Solution</title>
+    <title>MHT Designer | 40+ Expert Services</title>
     <link rel="icon" type="image/png" href="mhtfavicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
-        /* General Styles */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { background: #050505; color: #fff; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
 
-        /* Navigation */
         nav {
             position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; 
             align-items: center; padding: 15px 8%; background: rgba(0,0,0,0.9); 
@@ -28,12 +26,11 @@
             font-weight: bold; cursor: pointer; transition: 0.3s; color: #000;
         }
 
-        /* Hero Section - PC Default */
         #hero {
             height: 100vh; width: 100%; position: relative;
             display: flex; align-items: center; justify-content: center; text-align: center;
         }
-        .hero-content { position: absolute; z-index: 10; pointer-events: none; width: 100%; max-width: 1200px; padding: 0 20px; }
+        .hero-content { position: absolute; z-index: 10; pointer-events: none; width: 100%; padding: 0 20px; }
         .hero-content img { width: 160px; margin-bottom: 20px; animation: float 3s ease-in-out infinite; border-radius: 50%; box-shadow: 0 0 30px rgba(255, 204, 0, 0.4); }
         .hero-content h1 { font-size: 5rem; text-transform: uppercase; line-height: 1.1; font-weight: 800; }
         .hero-content h1 span { color: #ffcc00; text-shadow: 0 0 30px #ffcc00; }
@@ -44,7 +41,6 @@
             50% { transform: translateY(-20px); }
         }
 
-        /* Services Grid */
         #services { padding: 100px 8%; background: #080808; position: relative; z-index: 20; }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 { font-size: 3.5rem; color: #fff; text-transform: uppercase; }
@@ -55,22 +51,22 @@
             gap: 25px;
         }
         .card {
-            background: #111; padding: 40px; border-radius: 15px; border: 1px solid #222;
+            background: #111; padding: 35px; border-radius: 15px; border: 1px solid #222;
             transition: 0.4s; text-align: center;
         }
-        .card:hover { border-color: #ffcc00; transform: translateY(-10px) scale(1.03); background: #161616; }
-        .card .icon { font-size: 50px; margin-bottom: 20px; display: block; }
-        .card h3 { font-size: 1.5rem; margin-bottom: 12px; color: #ffcc00; }
-        .card p { color: #aaa; line-height: 1.6; font-size: 0.95rem; }
+        .card:hover { border-color: #ffcc00; transform: translateY(-10px); background: #161616; box-shadow: 0 10px 40px rgba(255, 204, 0, 0.15); }
+        .card .icon { font-size: 45px; margin-bottom: 15px; display: block; }
+        .card h3 { font-size: 1.4rem; margin-bottom: 10px; color: #ffcc00; }
+        .card p { color: #aaa; line-height: 1.5; font-size: 0.9rem; }
 
+        #contact { padding: 80px 8%; text-align: center; background: #050505; border-top: 1px solid #222; }
         canvas { position: absolute; top: 0; left: 0; z-index: 1; }
 
-        /* --- MEDIA QUERIES (Mobile Fixes) --- */
         @media (max-width: 768px) {
             nav { padding: 10px 5%; }
             nav ul { display: none; } 
             .logo-text { font-size: 18px; }
-            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content h1 { font-size: 2.3rem; }
             .hero-content img { width: 110px; }
             .hero-content p { letter-spacing: 2px; font-size: 0.8rem; }
             .section-title h2 { font-size: 2rem; }
@@ -94,14 +90,14 @@
         <div class="hero-content">
             <img src="MHT Designer Logo.png" alt="Logo">
             <h1>All Problem<br><span>One Solution</span></h1>
-            <p>MHT DESIGNER | 3D BUSINESS WORLD</p>
+            <p>MHT DESIGNER | 40+ PREMIUM SERVICES</p>
         </div>
     </section>
 
     <section id="services">
         <div class="section-title">
             <h2>Our <span>Premium</span> Services</h2>
-            <p>High-quality digital and physical design solutions.</p>
+            <p>Complete Digital and Physical Solution Hub.</p>
         </div>
 
         <div class="services-grid">
@@ -109,27 +105,49 @@
             <div class="card"><span class="icon">🏗️</span><h3>3D Sign Board</h3><p>Premium 3D boards for shop branding.</p></div>
             <div class="card"><span class="icon">💡</span><h3>Custom Neon Sign</h3><p>Neon signs aapke interior ko glow dene ke liye.</p></div>
             <div class="card"><span class="icon">📈</span><h3>Ads Marketing</h3><p>FB/IG ads ke zariye business grow karein.</p></div>
-            <div class="card"><span class="icon">🔍</span><h3>SEO Service</h3><p>Google rankings aur search optimization.</p></div>
+            <div class="card"><span class="icon">🔍</span><h3>SEO Service</h3><p>Google search rankings optimization expert.</p></div>
             <div class="card"><span class="icon">👥</span><h3>Social Growth</h3><p>Authentic followers aur likes services.</p></div>
-            <div class="card"><span class="icon">💻</span><h3>Web Development</h3><p>Modern aur responsive websites development.</p></div>
+            <div class="card"><span class="icon">💻</span><h3>Web Development</h3><p>Modern responsive websites development.</p></div>
             <div class="card"><span class="icon">🎬</span><h3>Motion Graphics</h3><p>Video editing aur animations expert.</p></div>
-            <div class="card"><span class="icon">🖨️</span><h3>Panaflex Print</h3><p>High-res panaflex printing services.</p></div>
+            <div class="card"><span class="icon">🖨️</span><h3>Panaflex Print</h3><p>High-res panaflex printing aur outdoor ads.</p></div>
             <div class="card"><span class="icon">🖼️</span><h3>Poster Design</h3><p>Creative event aur product posters.</p></div>
             <div class="card"><span class="icon">🔥</span><h3>Laser Cutting</h3><p>Acrylic aur wood laser cutting engraving.</p></div>
-            <div class="card"><span class="icon">🗺️</span><h3>Map Designing</h3><p>Custom maps aur layout designing.</p></div>
-            <div class="card"><span class="icon">📇</span><h3>Visiting Cards</h3><p>Business card design aur printing.</p></div>
+            <div class="card"><span class="icon">🗺️</span><h3>Map Designing</h3><p>Custom maps aur architectural layout designing.</p></div>
+            <div class="card"><span class="icon">📇</span><h3>Visiting Cards</h3><p>Professional cards design aur printing.</p></div>
             <div class="card"><span class="icon">📐</span><h3>Raster to Vector</h3><p>Manual vector tracing aur redrawing.</p></div>
             <div class="card"><span class="icon">📄</span><h3>Pamphlet Design</h3><p>Effective marketing pamphlet designs.</p></div>
             <div class="card"><span class="icon">🍽️</span><h3>Menu Design</h3><p>Hotel aur restaurant menu designs.</p></div>
-            <div class="card"><span class="icon">🪵</span><h3>Wall Design</h3><p>Acrylic aur wooden wall art decor.</p></div>
+            <div class="card"><span class="icon">🧱</span><h3>Wall Design & Print</h3><p>Interior decor with acrylic, wood aur print.</p></div>
             <div class="card"><span class="icon">🎞️</span><h3>Vinyl & Flex Pasting</h3><p>Expert vinyl aur flex fixing services.</p></div>
-            <div class="card"><span class="icon">🌍</span><h3>Country Numbers</h3><p>International numbers for business use.</p></div>
+            <div class="card"><span class="icon">🌍</span><h3>Country Numbers</h3><p>International numbers sale for business use.</p></div>
             <div class="card"><span class="icon">📺</span><h3>YT Monetization</h3><p>Complete YouTube monetization services.</p></div>
-            <div class="card"><span class="icon">🎨</span><h3>Thumbnail Design</h3><p>High CTR thumbnails for growth.</p></div>
-            <div class="card"><span class="icon">📱</span><h3>App Design</h3><p>Custom mobile app UI/UX design.</p></div>
+            <div class="card"><span class="icon">🎨</span><h3>Thumbnail Design</h3><p>High CTR thumbnails for YouTube growth.</p></div>
+            <div class="card"><span class="icon">📱</span><h3>App Development</h3><p>Custom mobile app UI/UX design.</p></div>
             <div class="card"><span class="icon">🛡️</span><h3>Ethical Hacking</h3><p>Cyber security aur account recovery expert.</p></div>
             <div class="card"><span class="icon">💍</span><h3>Nikkah Thumb Board</h3><p>Customized Nikkah boards for events.</p></div>
+            <div class="card"><span class="icon">📛</span><h3>Name Plate</h3><p>Premium name plates for home and office.</p></div>
+            <div class="card"><span class="icon">🏠</span><h3>House Plate</h3><p>Custom house number plates and designs.</p></div>
+            <div class="card"><span class="icon">🔳</span><h3>Standy Print</h3><p>Professional standy print and design for ads.</p></div>
+            <div class="card"><span class="icon">📍</span><h3>Google Map Add</h3><p>Shop/Office location add on Google Maps.</p></div>
+            <div class="card"><span class="icon">📝</span><h3>Blogging Promotion</h3><p>Shop promotion service through blogging.</p></div>
+            <div class="card"><span class="icon">👕</span><h3>T-Shirt Print</h3><p>Customized T-shirt printing and design.</p></div>
+            <div class="card"><span class="icon">⚒️</span><h3>Welding Service</h3><p>Gate, Jali, Grill aur Shutter welding expert.</p></div>
+            <div class="card"><span class="icon">🔑</span><h3>Real Estate</h3><p>House rent, purchase aur sale services.</p></div>
+            <div class="card"><span class="icon">💻</span><h3>PC/Laptop Sale</h3><p>Buying and selling of PC and Laptops.</p></div>
+            <div class="card"><span class="icon">⏰</span><h3>Wall Clock Design</h3><p>Customized wall clock designs for gifts.</p></div>
+            <div class="card"><span class="icon">🎵</span><h3>TikTok USA Sale</h3><p>TikTok USA accounts sale for monetization.</p></div>
+            <div class="card"><span class="icon">🎁</span><h3>Pen & Topper</h3><p>Custom pen and cake topper designs.</p></div>
+            <div class="card"><span class="icon">👔</span><h3>Job Provider</h3><p>Professional job provider services hub.</p></div>
+            <div class="card"><span class="icon">👷</span><h3>Worker Provider</h3><p>Skilled workers provider service for tasks.</p></div>
+            <div class="card"><span class="icon">🌑</span><h3>Dark Pic Editing</h3><p>Professional any type of dark photo editing.</p></div>
+            <div class="card"><span class="icon">💡</span><h3>Backlight Board</h3><p>Premium backlight board print and design.</p></div>
         </div>
+    </section>
+
+    <section id="contact">
+        <h2>Professional Help Needed?</h2>
+        <p>Aapki har mushkil ka hal aik click ki doori par hai.</p><br>
+        <button class="order-btn" onclick="window.location.href='https://wa.me/923316525133'">WhatsApp: +92 331 6525133</button>
     </section>
 
     <script>
